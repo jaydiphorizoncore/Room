@@ -35,6 +35,7 @@ class NoteViewModal(application: Application) : AndroidViewModel(application) {
     fun updateNote(note: Note) {
         viewModelScope.launch(Dispatchers.IO) {
             repository.update(note)
+
         }
     }
 
